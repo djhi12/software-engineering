@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from . import views
+from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path('hello/', views.hello_world, name='hello_world'),
+
+    # http://127.0.0.1:8000/hello/
+    path('hello/', views.hello_world, name='hello_world'),
 ]
