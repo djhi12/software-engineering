@@ -1,5 +1,15 @@
 from django.http import HttpResponse
 
+from django.http import HttpResponse
 
-def hello_world(request):
-    return HttpResponse("Hello, world!")
+
+def home(request):
+    return HttpResponse("Hello World")
+
+
+def about(request):
+    return HttpResponse("This is the about page.")
+
+
+def contact(request):
+    return HttpResponse("This is the contact page.")
