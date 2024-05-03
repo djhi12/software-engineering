@@ -31,7 +31,8 @@ from django.urls import path, include    # Import include module
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # Add view function for the root URL
+    # Add view function for the root URL
+    path('', views.home, name='home'),
 
     # http://127.0.0.1:8000/about/
     path('about/', views.about, name='about'),
